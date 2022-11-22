@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+      width: 100%;
+    height: 100vh;
+   font-family: sans-serif;
+    color: rgb(8, 0, 0);
+    /* background: url(/nbg.jpg.jpg); */
+    
+}
+body{
+    background-image: url(/nbg.jpg.jpg);
+    background-size:cover;
+    
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.logo{
+    letter-spacing: 2px;
+    font-size: 2em;
+    }
+    .logo a:hover{
+        background: transparent;  
+    }
+    .menu a{
+        text-decoration: none;
+        padding: 10px 20px;
+        position: relative;
+        font-size: large;
+    }
+    .menu a:before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        width: 0%;
+        height: 100%;
+        border-bottom: 1.5px solid rgb(184, 51, 51);
+    }
+    .menu a:hover:before{
+        width: 90%;
+        transition: 0.5s;
+    }
+    .register a{
+        text-decoration: none;
+        padding: 10px 20px;
+        color: rgb(232, 234, 236);
+        font-size: 15px;
+        background:rgb(184, 51, 51);
+        border-radius: 8px;
+    }
+    .register a:hover{
+        background: transparent;
+        transition: 0.5s;
+        border: 1px solid rgb(184,51,51);
+    }
+    .h-text{
+         max-width: 655px;
+         position: absolute;
+         top:50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         text-align: center;
+    }
+    .h-text span{
+        letter-spacing: 15px;
+    }
+    .h-text h2{
+        font-size: 3.5em;
+    }
+    .h-text a{
+        text-decoration: none;
+        background: rgb(184, 51, 51);
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 3px;
+    }
+    .h-text a:hover{
+        background: transparent;
+        transition: 0.5s;
+        border: 1px solid rgb(184, 51, 51);
+    }
